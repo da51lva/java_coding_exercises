@@ -1,5 +1,6 @@
 package com.techreturners.exercise001;
 
+import java.util.Iterator;
 import java.util.List;
 
 public class Exercise001 {
@@ -28,7 +29,14 @@ public class Exercise001 {
     }
 
     public int countLinuxUsers(List<User> users) {
-        // Add your code here
-        return 0;
+        Iterator<User> itr = users.iterator();
+        int count = 0;
+        while(itr.hasNext()){
+            User user = itr.next();
+            if(user.getType() == "Linux"){
+                count++;
+            }
+        }
+        return count;
     }
 }
