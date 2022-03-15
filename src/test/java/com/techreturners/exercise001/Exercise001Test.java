@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class Exercise001Test {
@@ -17,13 +18,16 @@ public class Exercise001Test {
         assertEquals("Oh no, bears!!!", ex001.capitalizeWord("oh no, bears!!!"));
     }
 
+
     @Test
+    @Ignore
     public void checkHelloAlreadyUppercase() {
         Exercise001 ex001 = new Exercise001();
         assertEquals("Hello", ex001.capitalizeWord("Hello"));
     }
 
     @Test
+    @Ignore
     public void checkInitials() {
         Exercise001 ex001 = new Exercise001();
         assertEquals("F.B", ex001.generateInitials("Frederic", "Bonneville"));
@@ -32,6 +36,7 @@ public class Exercise001Test {
     }
 
     @Test
+    @Ignore
     public void checkAddVat() {
         Exercise001 ex001 = new Exercise001();
         assertEquals(120, ex001.addVat(100, 20), 0.0);
@@ -41,6 +46,7 @@ public class Exercise001Test {
     }
 
     @Test
+    @Ignore
     public void checkSentenceReverse() {
         Exercise001 ex001 = new Exercise001();
         assertEquals("oof", ex001.reverse("foo"));
@@ -48,6 +54,7 @@ public class Exercise001Test {
     }
 
     @Test
+    @Ignore
     public void checkLinuxUsers() {
         Exercise001 ex001 = new Exercise001();
         User u1 = new User("Heather", "Windows 10", "Windows");

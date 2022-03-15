@@ -9,6 +9,7 @@ import java.time.Month;
 
 import static org.junit.Assert.assertEquals;
 
+@Ignore
 public class Exercise004Test {
 
     @Test
