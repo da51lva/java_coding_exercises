@@ -6,7 +6,6 @@ import org.junit.Ignore;
 
 import static org.junit.Assert.assertEquals;
 
-@Ignore
 public class Exercise003Test {
 
     private Exercise003 ex003;
