@@ -20,7 +20,6 @@ public class Exercise001Test {
 
 
     @Test
-    @Ignore
     public void checkHelloAlreadyUppercase() {
         Exercise001 ex001 = new Exercise001();
         assertEquals("Hello", ex001.capitalizeWord("Hello"));
