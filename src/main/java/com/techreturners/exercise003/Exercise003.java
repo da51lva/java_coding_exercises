@@ -10,11 +10,11 @@ public class Exercise003 {
                 return i;
             }
         }
-        throw new UnsupportedOperationException(("Pip's ice cream store does not contain the flavour '"+iceCreamFlavour+"'"));
+        return -1;
     }
 
     String[] iceCreamFlavours() {
-        throw new UnsupportedOperationException(("You can delete this statement and add your code here."));
+        return ICE_CREAMS;
     }
 
 }
