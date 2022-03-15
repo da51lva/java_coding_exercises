@@ -23,8 +23,8 @@ public class Exercise001 {
     }
 
     public String reverse(String sentence) {
-        // Add your code here
-        return "";
+        return new StringBuilder(sentence).reverse().toString();
+
     }
 
     public int countLinuxUsers(List<User> users) {
