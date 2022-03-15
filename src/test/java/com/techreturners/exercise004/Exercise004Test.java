@@ -38,4 +38,40 @@ public class Exercise004Test {
         assertEquals(expected, ex004.getDateTime());
     }
 
+    @Test
+    public void checkGetDateTimeWhenBothDateAndTimeIsSpecifiedWithMillenniumRollOver() {
+
+        Exercise004 ex004 = new Exercise004(LocalDateTime.of(1999, Month.DECEMBER, 31, 23, 59, 59, 0));
+        LocalDateTime expected = LocalDateTime.of(2031, Month.SEPTEMBER, 9, 1, 46, 39);
+
+        assertEquals(expected, ex004.getDateTime());
+    }
+
+    @Test
+    public void checkGetDateTimeWhenBothDateAndTimeIsSpecifiedAndYearIsZero() {
+
+        Exercise004 ex004 = new Exercise004(LocalDateTime.of(0, Month.JANUARY, 1, 0, 0, 0, 0));
+        LocalDateTime expected = LocalDateTime.of(31, Month.SEPTEMBER, 9, 1, 46, 40);
+
+        assertEquals(expected, ex004.getDateTime());
+    }
+
+    @Test
+    public void checkGetDateTimeWhenMinDateAndTimeIsSpecified() {
+
+        Exercise004 ex004 = new Exercise004(LocalDateTime.of(-999999999, Month.JANUARY, 1, 0, 0, 0, 0));
+        LocalDateTime expected = LocalDateTime.of(-999999968, Month.SEPTEMBER, 9, 1, 46, 40);
+
+        assertEquals(expected, ex004.getDateTime());
+    }
+
+    @Test
+    public void checkGetDateTimeWhenMaxDateAndTimeIsSpecified() {
+
+        Exercise004 ex004 = new Exercise004(LocalDateTime.of(999999968, Month.APRIL, 23, 22, 13, 19, 0));
+        LocalDateTime expected = LocalDateTime.of(999999999, Month.DECEMBER, 31, 23, 59, 59);
+
+        assertEquals(expected, ex004.getDateTime());
+    }
+
 }
