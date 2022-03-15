@@ -40,6 +40,22 @@ public class Exercise003Test {
     }
 
     @Test
+    public void checkGetIceCreamCodeForNonIndexedFlavour() {
+        String iceCreamFlavour = "Honeycomb";
+        int expected = -1;
+
+        assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
+    }
+
+    @Test
+    public void checkGetIceCreamCodeForSpellingMistake() {
+        String iceCreamFlavour = "Raspberry Riple";
+        int expected = -1;
+
+        assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
+    }
+
+    @Test
     public void checkPickMultipleIceCreamFlavours() {
 
         String[] expected = { "Pistachio", "Raspberry Ripple", "Vanilla", "Mint Chocolate Chip", "Chocolate", "Mango Sorbet" };
