@@ -34,7 +34,6 @@ public class Exercise001Test {
     }
 
     @Test
-    @Ignore
     public void checkAddVat() {
         Exercise001 ex001 = new Exercise001();
         assertEquals(120, ex001.addVat(100, 20), 0.0);
