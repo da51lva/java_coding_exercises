@@ -26,7 +26,6 @@ public class Exercise001Test {
     }
 
     @Test
-    @Ignore
     public void checkInitials() {
         Exercise001 ex001 = new Exercise001();
         assertEquals("F.B", ex001.generateInitials("Frederic", "Bonneville"));
