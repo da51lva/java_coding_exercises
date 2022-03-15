@@ -5,15 +5,19 @@ import java.time.LocalDateTime;
 
 public class Exercise004 {
 
+    private static final long GIGASECOND = 1000000000;
+
+    LocalDateTime dateTime;
+
     public Exercise004(LocalDate date) {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        this.dateTime = date.atStartOfDay().plusSeconds(GIGASECOND);
     }
 
     public Exercise004(LocalDateTime dateTime) {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        this.dateTime = dateTime.plusSeconds(GIGASECOND);
     }
 
     public LocalDateTime getDateTime() {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        return dateTime;
     }
 }
