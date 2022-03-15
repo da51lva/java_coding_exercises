@@ -6,7 +6,7 @@ public class Exercise001 {
 
     public String capitalizeWord(String word) {
         String firstLetter = word.substring(0, 1);
-        String remainingString = word.substring(1, word.length());
+        String remainingString = word.substring(1);
         return firstLetter.toUpperCase() + remainingString;
     }
 
@@ -19,8 +19,7 @@ public class Exercise001 {
     public double addVat(double originalPrice, double vatRate) {
         double vatRateAsDecimal = 1 + vatRate / 100;
         double newPrice = originalPrice * vatRateAsDecimal;
-        double newPriceRounded = Math.round(newPrice * 100.0) / 100.0; //rounds to 2 decimal places
-        return newPriceRounded;
+        return Math.round(newPrice * 100.0) / 100.0; //multiplication and division by 100.0 rounds to 2 decimal places
     }
 
     public String reverse(String sentence) {
