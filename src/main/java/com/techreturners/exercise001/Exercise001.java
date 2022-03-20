@@ -33,7 +33,7 @@ public class Exercise001 {
         int count = 0;
         while(itr.hasNext()){
             User user = itr.next();
-            if(user.getType() == "Linux"){
+            if(user.getType().equals("Linux")){
                 count++;
             }
         }
